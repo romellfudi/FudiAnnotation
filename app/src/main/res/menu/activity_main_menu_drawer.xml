@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="Menu Panel">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/op1"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="MainFragment" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Top Channels">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item
+                    android:id="@+id/op2"
+                    android:icon="@android:drawable/sym_action_email"
+                    android:title="Foo" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Tools">
+        <menu>
+            <group android:checkableBehavior="all">
+                <item
+                    android:id="@+id/op3"
+                    android:icon="@android:drawable/sym_call_missed"
+                    android:title="Close" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

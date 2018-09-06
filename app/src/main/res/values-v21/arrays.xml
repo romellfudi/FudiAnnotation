@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="listDaysRange">
+        <item>03-07</item>
+        <item>08-15</item>
+        <item>16-30</item>
+        <item>31-60</item>
+        <item>61-100</item>
+    </string-array>
+    <string-array name="listDealsRange">
+        <item>TODO</item>
+        <item>0.00 - 25,000</item>
+        <item>25,001 - 50,000</item>
+        <item>50,000 - a más</item>
+    </string-array>
+    <string-array name="lista_pais">
+        <item>@string/peru_string</item>
+        <item>@string/colombia_string</item>
+    </string-array>
+    <!--<string-array name="listCurrency">-->
+        <!--<item>@string/currency_string</item>-->
+        <!--<item>@string/soles_string</item>-->
+        <!--<item>@string/dolares_string</item>-->
+    <!--</string-array>-->
+    <!--<string-array name="listFrecuency">-->
+        <!--<item>@string/frecuency_string</item>-->
+        <!--<item>@string/days_15</item>-->
+        <!--<item>@string/days_30</item>-->
+        <!--<item>@string/days_60</item>-->
+        <!--<item>@string/days_90</item>-->
+    <!--</string-array>-->
+    <!--<string-array name="listDocumentTypes">-->
+        <!--<item>@string/type_document</item>-->
+        <!--<item>@string/type_document_dni</item>-->
+        <!--<item>@string/type_document_ruc</item>-->
+        <!--<item>@string/type_document_ce</item>-->
+    <!--</string-array>-->
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="normal">true</bool>
+    <string name="name">Fudi</string>
+    <string name="infoString">@string/app_name</string>
+    <integer name="num">5</integer>
+    <string-array name="names">
+        <item>pri</item>
+        <item>sec</item>
+        <item>ter</item>
+    </string-array>
+    <integer-array name="nums">
+        <item>3</item>
+        <item>34</item>
+        <item>34</item>
+    </integer-array>
+    <array name="colors">
+        <item>#FFFF0000</item>
+        <item>#FF00FF00</item>
+        <item>#FF0000FF</item>
+        <item>#FF00FF00</item>
+    </array>
+    <array name="icons">
+        <item>@drawable/buscar_cliente_icon</item>
+        <item>@drawable/config_icon</item>
+        <item>@drawable/tab_icon</item>
+    </array>
+    <dimen name="dimension">20dp</dimen>
+    <color name="orangeColor">#FF6319</color>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorLightGray">#AAA</color>
+    <color name="colorGray">#888</color>
+    <color name="colorGreen">#191</color>
+    <color name="colorOrangeLight">#FB7642</color>
+    <color name="colorOrangeDark">#F94C16</color>
+    <color name="colorWhite">#FFF</color>
+    <color name="colorRadioButton">#1188C1</color>
+    <color name="colorClear">#0000</color>
+    <color name="colorAlmostWhite">#F7F7F7</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorOrange">#FA4B16</color>
+    <color name="colorLightBlue">#1187BF</color>
+    <color name="colorTabSelected">#FA8E18</color>
+
+    <color name="colorBorderStepper">#D5D5D5</color>
+    <color name="colorButtonsStepper">#F7F7F7</color>
+
+    <color name="colorCeleste">#0099CC</color>
+    <color name="colorAzul">#0075B0</color>
+    <color name="colorverde">#00AF3F</color>
+    <color name="colorNaranja">#FF6319</color>
+    <color name="colorMorado">#5C2DC5</color>
+    <color name="colorRosado">#E91E63</color>
+    <color name="colorAmarillo">#FF9B0F</color>
+    <color name="colorGris">#9B9B9B</color>
+    <color name="colorCasiNegro70">#B24A4A4A</color>
+    <color name="colorCasiNegro100">#4A4A4A</color>
+    <color name="colorCasiBlanco">#F9F9F9</color>
+    <color name="colorTransparente">#0000</color>
+</resources>

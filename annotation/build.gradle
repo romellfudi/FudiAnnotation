@@ -1,0 +1,64 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'fudi-annotation'
+
+    publishedGroupId = 'com.romellfudi.fudi_annotation'
+    libraryName = 'FudiAnnotation'
+    artifact = 'fudi-annotation'
+
+    libraryDescription = 'Android Annotation Library for Widgets Design'
+
+    siteUrl = 'https://romellfudi.github.io/FudiAnnotation'
+    gitUrl = 'https://github.com/romellfudi/FudiAnnotation.git'
+
+    libraryVersion = '1.0.a'
+
+    developerId = 'romellfudi'
+    developerName = 'Romell Dominguez'
+    developerEmail = 'romllz489@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+android {
+    compileSdkVersion sdkVersion
+    buildToolsVersion supportBuildToolsVersion
+
+    defaultConfig {
+        minSdkVersion supportMinSdkVersion
+        targetSdkVersion sdkVersion
+        versionCode 1
+        versionName libraryVersion
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile 'com.android.support:design:26+'
+}
+
+task deleteJar(type: Delete) {
+    delete '../app/libs/FudiAnnotation.'+libraryVersion+'.jar'
+}
+
+task createJar(type: Copy){
+    from('build/intermediates/bundles/release/')
+    into('../app/libs')
+    include('classes.jar')
+    rename('classes.jar', 'FudiAnnotation.'+libraryVersion+'.jar')
+}
+
+createJar.dependsOn(deleteJar, build)

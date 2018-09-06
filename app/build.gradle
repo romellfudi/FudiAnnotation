@@ -1,0 +1,34 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion sdkVersion
+    buildToolsVersion supportBuildToolsVersion
+    defaultConfig {
+        applicationId "com.romellfudi.fudi_annotation.sample"
+        minSdkVersion supportMinSdkVersion
+        targetSdkVersion sdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    repositories{
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    compile supportDependencies.appCompat
+    compile supportDependencies.design
+    debugCompile project(':annotation')
+//    releaseCompile files('libs/FudiAnnotation.1.0.a.jar')
+    releaseCompile(name: 'FudiAnnotation.1.0.a',ext: 'aar')
+}
