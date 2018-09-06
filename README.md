@@ -3,6 +3,19 @@
 ### by Romell Dominguez
 [![](snapshot/icono.png)](https://www.romellfudi.com/)
 
+`latestVersion` is 1.0.a
+
+Add the following in your app's `build.gradle` file:
+
+```gradle
+repositories {
+    jcenter()
+}
+dependencies {
+    compile 'com.romellfudi.fudi_annotation:fudi-annotation:1.0.a'
+}
+```
+
 <style>
 img[src*='#center'] { 
     width:500px;

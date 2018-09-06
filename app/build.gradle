@@ -25,10 +25,12 @@ android {
 }
 
 dependencies {
-    testCompile 'junit:junit:4.12'
-    compile supportDependencies.appCompat
-    compile supportDependencies.design
-    debugCompile project(':fudi-annotation')
+    testImplementation 'junit:junit:4.12'
+    implementation supportDependencies.appCompat
+    implementation supportDependencies.design
+//    debugCompile project(':fudi-annotation')
 //    releaseCompile files('libs/FudiAnnotation.1.0.a.jar')
-    releaseCompile(name: 'FudiAnnotation.1.0.a',ext: 'aar')
+//    releaseCompile(name: 'FudiAnnotation.1.0.a',ext: 'aar')
+
+    implementation 'com.romellfudi.fudi_annotation:fudi-annotation:1.0.a'
 }
