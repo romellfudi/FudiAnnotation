@@ -28,7 +28,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile supportDependencies.appCompat
     compile supportDependencies.design
-    debugCompile project(':annotation')
+    debugCompile project(':fudi-annotation')
 //    releaseCompile files('libs/FudiAnnotation.1.0.a.jar')
     releaseCompile(name: 'FudiAnnotation.1.0.a',ext: 'aar')
 }
