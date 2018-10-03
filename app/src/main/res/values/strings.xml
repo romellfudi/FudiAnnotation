@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DSBWidget</string>
+    <string name="app_name">FudiAnnotationSample</string>
     <string name="action_settings">Settings</string>
     <string name="peru_string">Perú</string>
     <string name="colombia_string">Colombia</string>
