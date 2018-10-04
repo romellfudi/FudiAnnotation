@@ -9,6 +9,7 @@ android {
         targetSdkVersion sdkVersion
         versionCode 1
         versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -33,4 +34,9 @@ dependencies {
 //    releaseCompile(name: 'FudiAnnotation.1.0.a',ext: 'aar')
 
     implementation 'com.romellfudi.fudi_annotation:fudi-annotation:1.0.a'
+
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    androidTestImplementation 'junit:junit:4.12'
 }
