@@ -1,3 +1,6 @@
+# file .gitlab-ci.yml
+# This file is a template, and might need editing before it works on your project.
+# Read more about this script on this blog post https://about.gitlab.com/2016/11/30/setting-up-gitlab-ci-for-android-projects/, by Greyson Parrelli
 image: openjdk:8-jdk
 
 variables:
@@ -13,29 +16,15 @@ before_script:
   - echo y | android-sdk-linux/tools/android --silent update sdk --no-ui --all --filter android-${ANDROID_COMPILE_SDK}
   - echo y | android-sdk-linux/tools/android --silent update sdk --no-ui --all --filter platform-tools
   - echo y | android-sdk-linux/tools/android --silent update sdk --no-ui --all --filter build-tools-${ANDROID_BUILD_TOOLS}
-  - echo y | android-sdk-linux/tools/android --silent update sdk --no-ui --all --filter extra-android-m2repository
-  - echo y | android-sdk-linux/tools/android --silent update sdk --no-ui --all --filter extra-google-google_play_services
-  - echo y | android-sdk-linux/tools/android --silent update sdk --no-ui --all --filter extra-google-m2repository
+#  - echo y | android-sdk-linux/tools/android --silent update sdk --no-ui --all --filter extra-android-m2repository
+#  - echo y | android-sdk-linux/tools/android --silent update sdk --no-ui --all --filter extra-google-google_play_services
+#  - echo y | android-sdk-linux/tools/android --silent update sdk --no-ui --all --filter extra-google-m2repository
   - export ANDROID_HOME=$PWD/android-sdk-linux
   - export PATH=$PATH:$PWD/android-sdk-linux/platform-tools/
   - chmod +x ./gradlew
 
 stages:
-  - build
   - test
-
-build:
-  stage: build
-  script:
-    - ./gradlew assembleDebug
-  artifacts:
-    paths:
-    - app/build/outputs/
-
-unitTests:
-  stage: test
-  script:
-    - ./gradlew test
 
 functionalTests:
   stage: test
@@ -48,6 +37,3 @@ functionalTests:
     - ./android-wait-for-emulator
     - adb shell input keyevent 82
     - ./gradlew cAT
-  artifacts:
-    paths:
-    - app/build/reports/androidTests/
