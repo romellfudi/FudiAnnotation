@@ -1,4 +1,4 @@
-package com.example.romelldominguez.dsbwidget;
+package com.romellfudi.fudi_annotation.sample;
 
 import android.app.Activity;
 import android.os.SystemClock;
