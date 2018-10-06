@@ -6,6 +6,7 @@
  [![Bintray](https://img.shields.io/bintray/v/romllz489/maven/fudi-annotation.svg)](https://bintray.com/romllz489/maven/fudi-annotation)
  [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Fudi%20Annotation-green.svg?style=flat)]( https://android-arsenal.com/details/1/7115 )
  [![Jitpack](https://jitpack.io/v/romellfudi/FudiAnnotation.svg)](https://jitpack.io/#romellfudi/FudiAnnotation)
+ [![CircleCi]( https://img.shields.io/circleci/project/github/romellfudi/FudiAnnotation.svg)](https://circleci.com/gh/romellfudi/FudiAnnotation/tree/master)
 
 ### by Romell Dominguez
 [![](snapshot/icono.png)](https://www.romellfudi.com/)
