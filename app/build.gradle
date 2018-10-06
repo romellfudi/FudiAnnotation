@@ -29,6 +29,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     implementation supportDependencies.appCompat
     implementation supportDependencies.design
+    implementation 'com.android.support:appcompat-v7:26+'
     implementation 'com.android.support:design:26+'
     implementation project(':fudi-annotation')
 //    releaseCompile files('libs/FudiAnnotation.1.0.a.jar')
