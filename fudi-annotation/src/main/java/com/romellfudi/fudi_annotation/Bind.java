@@ -260,7 +260,7 @@ public class Bind {
                         @Override
                         public void onClick(View view) {
                             try {
-                                method.invoke(objectViewHolder, params);
+                                method.invoke(objectViewHolder, new Object[]{params});
                             } catch (InvocationTargetException e) {
                                 e.printStackTrace();
                             } catch (IllegalAccessException e) {
@@ -278,7 +278,7 @@ public class Bind {
                         @Override
                         public boolean onLongClick(View view) {
                             try {
-                                method.invoke(objectViewHolder, params);
+                                method.invoke(objectViewHolder, new Object[]{params});
                                 return true;
                             } catch (InvocationTargetException e) {
                                 e.printStackTrace();
