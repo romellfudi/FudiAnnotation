@@ -30,9 +30,9 @@ task clean(type: Delete) {
 ext {
     //Version
     supportMinSdkVersion = 17
-    sdkVersion = 28
+    sdkVersion = 26
     supportBuildToolsVersion = '26.0.2'
-    supportLibrary = '28.1.0'
+    supportLibrary = '26.1.0'
 
     //Support Libraries dependencies
     supportDependencies = [
