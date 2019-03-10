@@ -47,7 +47,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.android.support:design:26+'
+    implementation "com.android.support:design:$rootProject.supportLibrary"
 }
 
 task deleteJar(type: Delete) {
