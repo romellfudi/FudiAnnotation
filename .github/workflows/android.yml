@@ -19,12 +19,7 @@ jobs:
         run: ./gradlew assembleDebug
       - name: "Run UI Tests"
         uses: vgaidarji/android-github-actions-emulator@v1.0.1
-        run: ./gradlew connectedAndroidTest
-      - name: Upload Testing fudi-annotation
-        uses: actions/upload-artifact@v1
-        with:
-          name: fudi-annotation-test
-          path: fudi-annotation/build/reports/tests/testDebugUnitTest
+        run: ./gradlew connectedAndroidTest 
       - name: Upload fudi-annotation artifact
         uses: actions/upload-artifact@v1
         with:
