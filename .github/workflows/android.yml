@@ -16,9 +16,7 @@ jobs:
         with:
           java-version: 1.8
       - name: Build App with Gradle
-        run: ./gradlew assembleDebug
-      - name: "Pre"
-        run: ./gradlew connectedAndroidTest 
+        run: ./gradlew assembleDebug 
       - name: "Run UI Tests"
         uses: vgaidarji/android-github-actions-emulator@v1.0.1
       - name: "Post"
