@@ -22,11 +22,11 @@ jobs:
       - name: Functional Testing fudi-annotation 2
         run: chmod +x android-wait-for-emulator
       - name: Functional Testing fudi-annotation 3
-        run: echo y | android-sdk-linux/tools/android update sdk --no-ui --all --filter sys-img-x86-google_apis-26
+        run: echo y | android update sdk --no-ui --all --filter sys-img-x86-google_apis-26
       - name: Functional Testing fudi-annotation 4
-        run: echo no | android-sdk-linux/tools/android create avd -n test -t android-${ANDROID_COMPILE_SDK} --abi google_apis/x86
+        run: echo no | android create avd -n test -t android-28 --abi google_apis/x86
       - name: Functional Testing fudi-annotation 5
-        run: android-sdk-linux/tools/emulator64-x86 -avd test -no-window -no-audio &
+        run: emulator64-x86 -avd test -no-window -no-audio &
       - name: Functional Testing fudi-annotation 6
         run: ./android-wait-for-emulator
       - name: Functional Testing fudi-annotation 7
