@@ -17,8 +17,11 @@ jobs:
           java-version: 1.8
       - name: Build App with Gradle
         run: ./gradlew assembleDebug
+      - name: "Pre"
+        run: ./gradlew connectedAndroidTest 
       - name: "Run UI Tests"
         uses: vgaidarji/android-github-actions-emulator@v1.0.1
+      - name: "Post"
         run: ./gradlew connectedAndroidTest 
       - name: Upload fudi-annotation artifact
         uses: actions/upload-artifact@v1
