@@ -22,7 +22,7 @@ repositories {
     jcenter()
 }
 dependencies {
-    compile 'com.romellfudi.fudi_annotation:fudi-annotation:1.0.a'
+    implementation 'com.romellfudi.fudi_annotation:fudi-annotation:1.0.a'
 }
 ```
 
