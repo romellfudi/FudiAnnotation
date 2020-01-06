@@ -4,10 +4,10 @@
 image: openjdk:8-jdk
 
 variables:
-  ANDROID_COMPILE_SDK: "28"
-  ANDROID_BUILD_TOOLS: "28.0.2"
-  ANDROID_SDK_TOOLS:   "4333796"
-
+  ANDROID_COMPILE_SDK: "25"
+  ANDROID_BUILD_TOOLS: "24.0.0"
+  ANDROID_SDK_TOOLS: "24.4.1"
+ 
 before_script:
   - apt-get --quiet update --yes
   - apt-get --quiet install --yes wget tar unzip lib32stdc++6 lib32z1
