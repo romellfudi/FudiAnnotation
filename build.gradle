@@ -31,7 +31,7 @@ ext {
     //Version
     supportMinSdkVersion = 17
     sdkVersion = 28
-    supportBuildToolsVersion = '28.0.3'
+    supportBuildToolsVersion = '28.0.2'
     supportLibrary = '28.+'
 
     //Support Libraries dependencies
