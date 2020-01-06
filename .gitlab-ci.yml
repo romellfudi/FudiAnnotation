@@ -25,6 +25,15 @@ before_script:
 
 stages:
   - test
+  - build
+
+build:
+  stage: build
+  script:
+    - ./gradlew assembleDebug
+  artifacts:
+    paths:
+    - app/build/outputs/
 
 functionalTests:
   stage: test
