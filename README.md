@@ -12,7 +12,7 @@
 
 
 ### by Romell Dominguez
-[![](snapshot/icono.png)](https://www.romellfudi.com/)
+[![](https://raw.githubusercontent.com/romellfudi/assets/master/favicon.ico)](https://www.romellfudi.com/)
 
 `latestVersion` is 1.0.a
 
