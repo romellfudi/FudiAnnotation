@@ -23,7 +23,6 @@ jobs:
           name: fudi-annotation-aar
           path: fudi-annotation/build/outputs/aar/fudi-annotation-debug.aar
       - name: Run UI Tests 
-        uses: reactivecircus/android-emulator-runner@v2
+        uses: vgaidarji/android-github-actions-emulator@v1.0.1
         with:
-          api-level: 29
           script: ./gradlew connectedCheck
