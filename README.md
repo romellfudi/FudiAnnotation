@@ -4,10 +4,8 @@
  [![API](https://img.shields.io/badge/API-17%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=17)
  [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/romellfudi/FudiAnnotation/blob/master/LICENSE)
  [![Workflow](https://github.com/romellfudi/FudiAnnotation/workflows/Android%20CI/badge.svg)](https://github.com/romellfudi/FudiAnnotation/actions)
- [![Bintray](https://img.shields.io/bintray/v/romllz489/maven/fudi-annotation.svg)](https://bintray.com/romllz489/maven/fudi-annotation)
  [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Fudi%20Annotation-green.svg?style=flat)]( https://android-arsenal.com/details/1/7115 )
  [![Jitpack](https://jitpack.io/v/romellfudi/FudiAnnotation.svg)](https://jitpack.io/#romellfudi/FudiAnnotation)
- [![CircleCi]( https://img.shields.io/circleci/project/github/romellfudi/FudiAnnotation.svg)](https://circleci.com/gh/romellfudi/FudiAnnotation/tree/master)
  [![](https://img.shields.io/badge/language-ES-blue.svg)](./README.es)
 
 
