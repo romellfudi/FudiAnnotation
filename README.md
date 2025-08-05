@@ -1,4 +1,5 @@
-[![](snapshot/background.png)](https://github.com/romellfudi/FudiAnnotation)
+![Gemini_Generated_Image_94e07g94e07g94e0](https://github.com/user-attachments/assets/2785c803-597e-4dfe-8c7f-13500812bfc1)
+
 
  [![platform](https://img.shields.io/badge/platform-android-brightgreen.svg)](https://developer.android.com/index.html)
  [![API](https://img.shields.io/badge/API-17%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=17)
